@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.github.paulcwarren.ginkgo4j.ui;singleton:=tru
+ e
+Bundle-Name: Ui
+Bundle-Version: 1.0.0.201704100522
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.12.0",org.e
+ clipse.ui;bundle-version="3.108.0",org.eclipse.jdt.ui;bundle-version=
+ "3.12.1",org.eclipse.jface.text;bundle-version="3.11.1",org.eclipse.s
+ wt;bundle-version="3.105.1"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.github.paulcwarren.ginkgo4j.ui.Ginkgo4jUIPlugin
+Bundle-Vendor: GITHUB
+

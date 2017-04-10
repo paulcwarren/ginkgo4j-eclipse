@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<!--
+	<extension
+		point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+		id="Ginkgo4jTypeCompletionProposalComputer">
+		<javaCompletionProposalComputer 
+			class="org.eclipse.jdt.internal.ui.text.java.JavaAllCompletionProposalComputer"
+			categoryId="org.eclipse.jdt.ui.javaTypeProposalCategory">
+			<partition type="__dftl_partition_content_type"/>
+			<partition type="__java_string"/>
+		</javaCompletionProposalComputer>
+	</extension>
+-->
+	 <extension point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+	   id="com.github.paulcwarren.ginkgo4j.templateProposalCategory"
+	   name="Ginkgo4j Proposals">
+	   <proposalCategory
+          icon="icons/sample.gif"/>
+	 </extension>
+	
+	 <extension
+        id="com.github.paulcwarren.ginkgo4j.ui.tempalteProposalComputer"
+        name="Ginkgo4j Template Proposal Computer"
+        point="org.eclipse.jdt.ui.javaCompletionProposalComputer">
+	   <javaCompletionProposalComputer
+          activate="true"
+          categoryId="com.github.paulcwarren.ginkgo4j.templateProposalCategory"
+          class="com.github.paulcwarren.ginkgo4j.ui.Ginkgo4jProposalComputer"
+          needsSortingAfterFiltering="true">
+      		<partition type="__dftl_partition_content_type"/>
+			<partition type="__java_string"/>
+	   </javaCompletionProposalComputer>
+	 </extension>
+  <extension
+        id="com.github.paulcwarren.ginkgo4j.ui.templateProposalSorter"
+        name="Ginkgo4j Proposal Sorter"
+        point="org.eclipse.jdt.ui.javaCompletionProposalSorters">
+     <proposalSorter
+           class="com.github.paulcwarren.ginkgo4j.ui.Ginkgo4jProposalSorter"
+           id="com.github.paulcwarren.ginkgo4j.ui.proposalSorter"
+           name="Ginkgo4j proposals first">
+     </proposalSorter>
+  </extension>
+</plugin>

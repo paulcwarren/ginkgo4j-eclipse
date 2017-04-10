@@ -1,0 +1,17 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.paulcwarren.ginkgo4j</groupId>
+    <artifactId>com.github.paulcwarren.ginkgo4j.plugins</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <parent>
+	    <groupId>com.github.paulcwarren.ginkgo4j</groupId>
+        <artifactId>com.github.paulcwarren.ginkgo4j.root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>com.github.paulcwarren.ginkgo4j.ui</module>
+    </modules>
+</project>
