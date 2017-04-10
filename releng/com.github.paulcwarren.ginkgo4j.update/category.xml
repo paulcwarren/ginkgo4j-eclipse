@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.github.paulcwarren.ginkgo4j.feature_1.0.0.qualifier.jar" id="com.github.paulcwarren.ginkgo4j.feature" version="1.0.0.qualifier">
+      <category name="ginkgo4j"/>
+   </feature>
+   <category-def name="ginkgo4j" label="GInkgo4j">
+      <description>
+         Ginkgo4j Content Assist
+      </description>
+   </category-def>
+</site>
